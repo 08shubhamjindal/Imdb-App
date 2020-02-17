@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Imdb.css">
+  </head>
+  <body>
+    <div>
+      <ul id="test"></ul>
+    </div>
+    <div style="text-align:center;">
+    <input type="button" id="first" onclick="firstPage()" value="first" />
+    <input type="button" id="next" onclick="nextPage()" value="next" />
+    <input type="button" id="previous" onclick="previousPage()" value="previous" />
+    <input type="button" id="last" onclick="lastPage()" value="last" />
+    </div>
+    <div id="spinner"></div>
+    <label for="Sort">Sort By</label>
+    <select id="sortfeature" onmousedown="this.value='';" onchange="load(this.value);">
+    <option value="budget">Budget</option>
+    <option value="title_year">Year</option>
+    </select>
+  <div id="list"></div>
+  </body>
+<script src="Imdb.js"></script>
+</html>
